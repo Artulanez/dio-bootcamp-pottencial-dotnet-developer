@@ -1,27 +1,45 @@
 ﻿using ExemplosFundamentos.Models;
 
+//estrutura de repetição
+
+int numero = 5;
+int contador = 0;
+while (contador <= 10)
+{
+    Console.WriteLine($"{numero} x {contador} = {numero *contador}");
+    contador++;
+}
+
+// int numero = 5;
+
+// for (int contador = 0; contador <= 100000; contador++)
+// {
+//     Console.WriteLine($"{numero} x {contador} = {numero *contador}");
+// }
+
+
 //Operadores Aritimeticos
-Calculadora calc = new Calculadora();
+// Calculadora calc = new Calculadora();
 
-// calc.Somar(10,30);
-// calc.Subtrair(30,10);
-// calc.Multiplicar(10,5);
-// calc.Dividir(8,2);
-// calc.Potencia(3,3);
+// // calc.Somar(10,30);
+// // calc.Subtrair(30,10);
+// // calc.Multiplicar(10,5);
+// // calc.Dividir(8,2);
+// // calc.Potencia(3,3);
 
-// calc.Seno(30);
-// calc.Coseno(30);
-// calc.Tangente(30);
+// // calc.Seno(30);
+// // calc.Coseno(30);
+// // calc.Tangente(30);
 
-int numero = 10;
+// int numero = 10;
 
-Console.WriteLine(numero);
-Console.WriteLine("Incrementando 10");
-numero++;
-Console.WriteLine(numero);
-Console.WriteLine("Decrementando 11");
-numero--;
-Console.WriteLine(numero);
+// Console.WriteLine(numero);
+// Console.WriteLine("Incrementando 10");
+// numero++;
+// Console.WriteLine(numero);
+// Console.WriteLine("Decrementando 11");
+// numero--;
+// Console.WriteLine(numero);
 
 //operador logico
 
