@@ -1,23 +1,73 @@
 ﻿using ExemplosFundamentos.Models;
 
+//operador logico
+
+bool choveu = true;
+bool estaTarde = true;
+
+if ( !choveu && !estaTarde)
+{
+    Console.WriteLine("Vou pedalar.");
+}
+else
+{
+    Console.WriteLine("Vou pedalar outro dia");
+}
+
+
+
+// bool possuiPresencaMinima = true;
+// double media = 7.5;
+
+// if (possuiPresencaMinima && media > 7)
+// {
+//     Console.WriteLine("Aprovado!");
+// }
+// else
+// {
+//     Console.WriteLine("Reprovado!");
+// }
+
+// bool ehMaiorDeIdade = false;
+// bool possuiAutorizacaoDoResponsavel = true;
+
+// if (ehMaiorDeIdade || possuiAutorizacaoDoResponsavel)
+// {
+//     Console.WriteLine("Entrada liberada!");
+// }
+// else
+// {
+//     Console.WriteLine("Entrada não liberada!");
+// }
+
+
+
+
+
+
+
+
+
+
+
 // operadores condicionais 
 
-Console.WriteLine("Digite uma letra");
-string? letra = Console.ReadLine();
+// Console.WriteLine("Digite uma letra");
+// string? letra = Console.ReadLine();
 
-switch(letra)
-{
-    case "a":
-    case "e":
-    case "i":
-    case "o":
-    case "u":
-        Console.WriteLine("Vogal.");
-        break;
-    default:
-        Console.WriteLine("Não é Vogal.");
-        break;
-}
+// switch(letra)
+// {
+//     case "a":
+//     case "e":
+//     case "i":
+//     case "o":
+//     case "u":
+//         Console.WriteLine("Vogal.");
+//         break;
+//     default:
+//         Console.WriteLine("Não é Vogal.");
+//         break;
+// }
 
 
 
