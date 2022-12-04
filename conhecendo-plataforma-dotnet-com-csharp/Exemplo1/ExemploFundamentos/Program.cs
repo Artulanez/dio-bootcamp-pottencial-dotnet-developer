@@ -1,14 +1,17 @@
-﻿using ExemplosFundamentos.Models;
+﻿using ExemplosFundamentos.Common.Models;
+
+Pessoa pessoa1 = new Pessoa();
+
 
 //estrutura de repetição
 
-int numero = 5;
-int contador = 0;
-while (contador <= 10)
-{
-    Console.WriteLine($"{numero} x {contador} = {numero *contador}");
-    contador++;
-}
+// int numero = 5;
+// int contador = 0;
+// while (contador <= 10)
+// {
+//     Console.WriteLine($"{numero} x {contador} = {numero *contador}");
+//     contador++;
+// }
 
 // int numero = 5;
 
