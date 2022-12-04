@@ -1,13 +1,74 @@
 ﻿using ExemplosFundamentos.Models;
 
-string a = "15a";
+// operadores condicionais 
 
-int b = 0;
+Console.WriteLine("Digite uma letra");
+string? letra = Console.ReadLine();
 
-int.TryParse(a, out b);
+switch(letra)
+{
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+        Console.WriteLine("Vogal.");
+        break;
+    default:
+        Console.WriteLine("Não é Vogal.");
+        break;
+}
 
-Console.WriteLine(b);
-Console.WriteLine("Conversão realizada");
+
+
+
+
+
+
+
+
+
+
+
+
+
+// int quantidadeEmEstoque = 10;
+// int quantidadeCompra = 0;
+
+// bool possivelVenda = quantidadeCompra > 0 && quantidadeEmEstoque >= quantidadeCompra;
+
+// Console.WriteLine($"Quantidade em estoque: {quantidadeEmEstoque}");
+// Console.WriteLine($"Quantidade compra: {quantidadeCompra}");
+// Console.WriteLine($"É possível realizar a venda? {possivelVenda}");
+
+
+// if (quantidadeCompra == 0)
+// {
+//     Console.WriteLine("Venda Invalida.");
+// }
+// else if (possivelVenda)
+// {
+//     Console.WriteLine("Venda Realizada!");
+// }
+// else
+// {
+//     Console.WriteLine("Desculpe, não temos a quantidade em estoque");
+// }
+
+
+
+
+
+
+// cast com tratamento
+// string a = "15a";
+
+// int b = 0;
+
+// int.TryParse(a, out b);
+
+// Console.WriteLine(b);
+// Console.WriteLine("Conversão realizada");
 
 
 
