@@ -1,21 +1,43 @@
 ﻿using ExemplosFundamentos.Common.Models;
 
-List<string> listaString = new List<string>();
 
-listaString.Add("SP");
-listaString.Add("BA");
-listaString.Add("MG");
-listaString.Add("RJ");
+ int qt = int.Parse(Console.ReadLine());
+// TODO: Crie as outras condições necessárias para a resolução do desafio:
+for ( int contador = 0; contador < qt; contador++)
+{
+    string[] v = new string[2];
+    v[0] = Console.ReadLine();
+    v[1] = Console.ReadLine();
 
-Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+    string a = v[0];
+    string b = v[1];
+    
+    Console.WriteLine(b.Length);
+    if ( b.Length > a.Length )
+        Console.WriteLine("nao encaixa");
+    else if (a.Contains(b) && a.LastIndexOf(b,a.Length-b.Length) > 0)
+        Console.WriteLine("encaixa");
+    else
+        Console.WriteLine("nao encaixa");
 
-listaString.Add("SC");
+}
 
-Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+// List<string> listaString = new List<string>();
 
-listaString.Remove("MG");
+// listaString.Add("SP");
+// listaString.Add("BA");
+// listaString.Add("MG");
+// listaString.Add("RJ");
 
-Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+// Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+// listaString.Add("SC");
+
+// Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
+
+// listaString.Remove("MG");
+
+// Console.WriteLine($"Itens na minha lista: {listaString.Count} - Capacidade: {listaString.Capacity}");
 
 
 // Console.WriteLine("Percorrendo o arrey com for");
