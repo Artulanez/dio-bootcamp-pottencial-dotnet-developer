@@ -1,11 +1,75 @@
 ﻿using exemplos.models;
 using System.Globalization;
 
-Dictionary<string, string> estados = new Dictionary<string, string>();
 
-estados.Add("SP","São Paulo");
-estados.Add("BA","Bahia");
-estados.Add("MG","Minas Gerais");
+int numero = 20;
+bool ehPar = false;
+
+ehPar = numero % 2 == 0;
+Console.WriteLine($"O número {numero} é "+ (ehPar ? "par" : "impar") );
+
+
+
+// Pessoa p1 = new Pessoa("Artulanez", "Souza", 32);
+// (string nome, string sobrenome) = p1;
+// Console.WriteLine($"{nome} {sobrenome}");
+
+
+// LeituraArquivo arquivo = new LeituraArquivo();
+
+// var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("arquivos/arquivoLeitura.txt");
+
+// if (sucesso)
+// {
+//     //Console.WriteLine($"Quantidade de linhas:{quantidadeLinhas}");
+//     foreach (string item in linhasArquivo)
+//     {
+//         Console.WriteLine(item);
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Não foi possível ler o arquivo.");
+// }
+
+
+
+// LeituraArquivo arquivo = new LeituraArquivo();
+
+// var (sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("arquivos/arquivoLeitura.txt");
+
+// if (sucesso)
+// {
+//     Console.WriteLine($"Quantidade de linhas:{quantidadeLinhas}");
+//     foreach (string item in linhasArquivo)
+//     {
+//         Console.WriteLine(item);
+//     }
+// }
+// else
+// {
+//     Console.WriteLine("Não foi possível ler o arquivo.");
+// }
+
+
+
+
+// (int, string, string, decimal) tupla = (1, "Artulanez", "Souza", 1.80M);
+// ValueTuple<int, string, string, decimal> outroExemploTupla = (1, "Artulanez", "Souza", 1.80M);
+// var outroExemploTuplaCreate = Tuple.Create(1, "Artulanez", "Souza", 1.80M);
+
+// Console.WriteLine($"Id: {tupla.Item1} ");
+// Console.WriteLine($"Nome: {tupla.Item2} ");
+// Console.WriteLine($"Sobrenome: {tupla.Item3} ");
+// Console.WriteLine($"Altura: {tupla.Item4} ");
+
+
+
+// Dictionary<string, string> estados = new Dictionary<string, string>();
+
+// estados.Add("SP","São Paulo");
+// estados.Add("BA","Bahia");
+// estados.Add("MG","Minas Gerais");
 
 // foreach (KeyValuePair<string, string> item in estados)
 // {
@@ -20,17 +84,17 @@ estados.Add("MG","Minas Gerais");
 //     Console.WriteLine($"Chave: {item.Key}, valor: {item.Value} ");
 // }
 
-string chave = "BA";
-Console.WriteLine($"Verificando o elemento {chave}");
+// string chave = "BA";
+// Console.WriteLine($"Verificando o elemento {chave}");
 
-if (estados.ContainsKey(chave)) 
-{
-    Console.WriteLine($"Valor existente: {chave}");
-}
-else
-{
-    Console.WriteLine($"Valor não existe. É seguro adicionar a chave: {chave}");
-}
+// if (estados.ContainsKey(chave)) 
+// {
+//     Console.WriteLine($"Valor existente: {chave}");
+// }
+// else
+// {
+//     Console.WriteLine($"Valor não existe. É seguro adicionar a chave: {chave}");
+// }
 
 // Stack<int> pilha = new  Stack<int>();
 
