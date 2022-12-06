@@ -1,18 +1,122 @@
 ﻿using exemplos.models;
 using System.Globalization;
 
-string dataString = "2022-07-17 18:00";
+Dictionary<string, string> estados = new Dictionary<string, string>();
 
-bool sucesso = DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime data);
+estados.Add("SP","São Paulo");
+estados.Add("BA","Bahia");
+estados.Add("MG","Minas Gerais");
 
-if (sucesso)
+// foreach (KeyValuePair<string, string> item in estados)
+// {
+//     Console.WriteLine($"Chave: {item.Key}, valor: {item.Value} ");
+// }
+
+// Console.WriteLine("-----------------");
+// estados.Remove("BA");
+// estados["SP"] = "São Paulo - elemento alterado";
+// foreach (KeyValuePair<string, string> item in estados)
+// {
+//     Console.WriteLine($"Chave: {item.Key}, valor: {item.Value} ");
+// }
+
+string chave = "BA";
+Console.WriteLine($"Verificando o elemento {chave}");
+
+if (estados.ContainsKey(chave)) 
 {
-    Console.WriteLine($"Conversão com sucesso! data:{data}");
+    Console.WriteLine($"Valor existente: {chave}");
 }
 else
-{ 
-    Console.WriteLine($"{dataString} não é uma data válida!");
+{
+    Console.WriteLine($"Valor não existe. É seguro adicionar a chave: {chave}");
 }
+
+// Stack<int> pilha = new  Stack<int>();
+
+// pilha.Push(4);
+// pilha.Push(6);
+// pilha.Push(8);
+// pilha.Push(10);
+
+// foreach (int item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
+
+// Console.WriteLine($"Removendo o elemento do topo {pilha.Pop()}");
+// pilha.Push(20);
+
+// foreach (int item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
+
+
+// Queue<int> fila = new Queue<int>();
+// fila.Enqueue(2);
+// fila.Enqueue(4);
+// fila.Enqueue(6);
+// fila.Enqueue(8);
+
+// foreach (int item in fila)
+// {
+//     Console.WriteLine(item);
+// }
+
+// Console.WriteLine($"Removendo o elemento {fila.Dequeue()}");
+// fila.Enqueue(10);
+
+// foreach (int item in fila)
+// {
+//     Console.WriteLine(item);
+// }
+
+
+
+// ExemploExcecao exemploExcecao = new ExemploExcecao();
+// exemploExcecao.metodo1();
+
+
+// try
+// {
+//     string[] linhas = File.ReadAllLines("arquivos/arquivo-Leitura.txt");
+
+//     foreach (string linha in linhas)
+//     {
+//         Console.WriteLine(linha);
+//     }
+// }
+// catch (FileNotFoundException ex)
+// {
+//     Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Arquivo não encontrado {ex.Message}");
+// }
+// catch (DirectoryNotFoundException ex)
+// {
+//     Console.WriteLine($"Ocorreu um erro na leitura do arquivo. Pasta não encontrada {ex.Message}");
+// }
+// catch (Exception ex)
+// {
+//     Console.WriteLine($"Ocorreu uma exceção generica. {ex.Message}");
+// }
+// finally
+// {
+//     Console.WriteLine("Chegou até aqui");
+// }
+
+//////////////////////////
+// string dataString = "2022-07-17 18:00";
+
+// bool sucesso = DateTime.TryParseExact(dataString, "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime data);
+
+// if (sucesso)
+// {
+//     Console.WriteLine($"Conversão com sucesso! data:{data}");
+// }
+// else
+// { 
+//     Console.WriteLine($"{dataString} não é uma data válida!");
+// }
 
 
 // DateTime data = DateTime.Now;
