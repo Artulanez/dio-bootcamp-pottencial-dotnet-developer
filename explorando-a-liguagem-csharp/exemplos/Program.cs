@@ -3,16 +3,89 @@ using Newtonsoft.Json;
 using System.Globalization;
 
 
-string conteudoArquivo = File.ReadAllText("arquivos/vendas.json");
-List<Venda> listaVendas = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+int numero = 20;
+bool ehPar = false;
 
-foreach (Venda item in listaVendas)
-{
-    Console.WriteLine($"id: {item.Id}, Produto: {item.Produto}, Preço: {item.Preco}, Date: {item.DataVenda.ToString("dd/MM/yyyy HH:mm")} ");
-}
+ehPar = numero.ehPar();
+Console.WriteLine($"O número {numero} é "+ (ehPar ? "par" : "impar") );
 
 
 
+
+
+
+
+
+
+// MeuArray<int> arrayInteiro = new MeuArray<int>();
+// arrayInteiro.AdicionarElementoArray(30);
+// Console.WriteLine(arrayInteiro[0]);
+
+// MeuArray<string> arrayString = new MeuArray<string>();
+// arrayString.AdicionarElementoArray("Texto");
+// Console.WriteLine(arrayString[0]);
+
+
+
+
+// dynamic variavelDinamica = 4;
+
+// Console.WriteLine($"Tipo da variavel: {variavelDinamica.GetType()}, valor: {variavelDinamica}");
+
+// variavelDinamica = "Texto";
+
+// Console.WriteLine($"Tipo da variavel: {variavelDinamica.GetType()}, valor: {variavelDinamica}");
+
+
+
+// string conteudoArquivo = File.ReadAllText("arquivos/vendas.json");
+// List<Venda> listaVendas = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+
+// var listaAnonima = listaVendas.Select(x => new { x.Produto, x.Preco });
+// foreach (var venda in listaAnonima)
+// {
+//     Console.WriteLine($"Produto: {venda.Produto}, Preço: {venda.Preco}");
+// }
+
+
+
+// var tipoAnonimo = new { Nome = "Artulanez", sobreNome = "Souza", Altura = 1.75 };
+
+// Console.WriteLine("Nome: " + tipoAnonimo.Nome);
+// Console.WriteLine("Sobrenome: " + tipoAnonimo.sobreNome);
+// Console.WriteLine("Altura: " + tipoAnonimo.Altura);
+
+
+// string conteudoArquivo = File.ReadAllText("arquivos/vendas.json");
+// List<Venda> listaVendas = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+
+// foreach (Venda item in listaVendas)
+// {
+//     Console.WriteLine($"id: {item.Id}, Produto: {item.Produto}, Preço: {item.Preco}, Date: {item.DataVenda.ToString("dd/MM/yyyy HH:mm")} "+
+//                        $" { (item.Desconto.HasValue ? $"Desconto: {item.Desconto.Value}" : " " ) } ");
+// }
+
+
+// bool? desejaReceberEmail = true;
+
+// if (desejaReceberEmail.HasValue && desejaReceberEmail.Value)
+// {
+//     Console.WriteLine("O usúario optou por receber e-mail.");
+// }
+// else
+// {
+//     Console.WriteLine("O usúario não respondeu ou optou por não receber e-mail.");
+// }
+
+
+
+// string conteudoArquivo = File.ReadAllText("arquivos/vendas.json");
+// List<Venda> listaVendas = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+
+// foreach (Venda item in listaVendas)
+// {
+//     Console.WriteLine($"id: {item.Id}, Produto: {item.Produto}, Preço: {item.Preco}, Date: {item.DataVenda.ToString("dd/MM/yyyy HH:mm")} ");
+// }
 
 
 
